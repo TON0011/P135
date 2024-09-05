@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Object Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container text-center mt-5">
+    <h1 class="display-4">AI Object Finder</h1>
+    <p class="lead">Enter the object name you want to search and click "Start" to begin object detection.</p>
+
+    <!-- Input field for object name -->
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="object-input" placeholder="Enter object name...">
+      <button class="btn btn-primary" onclick="start()">Start</button>
+    </div>
+
+    <!-- Empty div to display the model status -->
+    <div id="model-status" class="alert alert-info" role="alert">
+      Model status will appear here.
+    </div>
+
+    <!-- Empty div to display object detection result -->
+    <div id="object-status" class="alert alert-success d-none" role="alert">
+      Object detection status will appear here.
+    </div>
+
+    <!-- Canvas element for p5.js -->
+    <div class="canvas-container mt-4">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

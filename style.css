@@ -1,0 +1,44 @@
+/* Style for the whole page */
+body {
+    background-image: url('your-background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    color: #fff;
+  }
+  
+  /* Custom heading styles */
+  h1 {
+    color: #f5f5f5;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  p.lead {
+    color: #ddd;
+    font-size: 1.25rem;
+  }
+  
+  /* Style the input and button */
+  .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the model status */
+  #model-status, #object-status {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  /* Style for p5.js canvas */
+  .canvas-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  canvas {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  }
+  
